@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dashboard Ejecutivo | CAFAM COMERCIAL</title>
+
+<!-- FUENTE -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png"
+href="https://i.ibb.co/hJc9Dw2Z/unnamed-removebg-preview-1.png">
+
+<link rel="shortcut icon"
+href="https://i.ibb.co/hJc9Dw2Z/unnamed-removebg-preview-1.png"
+type="image/png">
+
+<link rel="apple-touch-icon"
+href="https://i.ibb.co/hJc9Dw2Z/unnamed-removebg-preview-1.png">
+
+<!-- LIBRERÍAS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
 <style>
+
 :root {
   --blue-deep:#001228;
   --blue-corp:#003B73;
@@ -30,6 +50,17 @@
   --reprog:#FFB347;
   --radius:18px;
   --tr:all 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:
+  radial-gradient(circle at top left,#0055A4 0%,transparent 25%),
+  radial-gradient(circle at bottom right,#4CC9F0 0%,transparent 20%),
+  linear-gradient(135deg,#001228,#003B73,#001228);
+  min-height:100vh;
+  color:var(--text-primary);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
