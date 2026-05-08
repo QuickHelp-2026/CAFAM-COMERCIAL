@@ -284,7 +284,7 @@ tbody td{padding:8px 11px;color:var(--text-secondary);}
 <div class="main">
 
   <section>
-    <p class="sec-lbl">🏠 Resumen Ejecutivo General — Todas las Hojas</p>
+    <p class="sec-lbl">🏠 Resumen general</p>
     <div class="card" id="r-intro" style="font-size:12px;line-height:1.8;color:var(--text-secondary);">Cargando resumen…</div>
   </section>
 
@@ -307,30 +307,76 @@ tbody td{padding:8px 11px;color:var(--text-secondary);}
   </section>
 
   <!-- Gráficas cruzadas -->
-  <section>
-    <p class="sec-lbl">📊 Análisis Cruzado</p>
-    <div class="g2">
-      <div class="card">
-        <div class="card-hdr"><span class="card-title"><span class="dot"></span>Cumplimiento vs Ventas por Ciudad</span><span class="badge">Cruzado</span></div>
-        <div class="ch-md"><canvas id="r-cCross"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-hdr"><span class="card-title"><span class="dot"></span>Entregas vs Tiempo Promedio por Ciudad</span><span class="badge">Cruzado</span></div>
-        <div class="ch-md"><canvas id="r-cCross2"></canvas></div>
-      </div>
-    </div>
-    <div class="g2" style="margin-top:16px;">
-      <div class="card">
-        <div class="card-hdr"><span class="card-title"><span class="dot"></span>Top 10 Mensajeros — Entregas Totales</span><span class="badge">Ranking</span></div>
-        <div class="rank-list" id="r-rankMens"></div>
-      </div>
-      <div class="card">
-        <div class="card-hdr"><span class="card-title"><span class="dot"></span>Top 10 Puntos de Venta — Gestión</span><span class="badge">Ranking</span></div>
-        <div class="rank-list" id="r-rankPV"></div>
-      </div>
-    </div>
-  </section>
+<section>
+  <p class="sec-lbl">📊 Análisis Cruzado</p>
 
+  <div class="g2 charts-grid">
+
+    <!-- Gráfico 1 -->
+    <div class="card chart-card">
+      <div class="card-hdr">
+        <span class="card-title">
+          <span class="dot"></span>
+          Cumplimiento vs Ventas por Ciudad
+        </span>
+
+        <span class="badge">Cruzado</span>
+      </div>
+
+      <div class="ch-md chart-container">
+        <canvas id="r-cCross"></canvas>
+      </div>
+    </div>
+
+    <!-- Gráfico 2 -->
+    <div class="card chart-card">
+      <div class="card-hdr">
+        <span class="card-title">
+          <span class="dot"></span>
+          Entregas vs Tiempo Promedio por Ciudad
+        </span>
+
+        <span class="badge">Cruzado</span>
+      </div>
+
+      <div class="ch-md chart-container">
+        <canvas id="r-cCross2"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Rankings -->
+  <div class="g2" style="margin-top:16px;">
+
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">
+          <span class="dot"></span>
+          Top 10 Mensajeros — Entregas Totales
+        </span>
+
+        <span class="badge">Ranking</span>
+      </div>
+
+      <div class="rank-list" id="r-rankMens"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-hdr">
+        <span class="card-title">
+          <span class="dot"></span>
+          Top 10 Puntos de Venta — Gestión
+        </span>
+
+        <span class="badge">Ranking</span>
+      </div>
+
+      <div class="rank-list" id="r-rankPV"></div>
+    </div>
+
+  </div>
+</section>
   <!-- Alertas generales -->
   <section>
     <p class="sec-lbl">⚠️ Alertas y Conclusiones Operativas</p>
